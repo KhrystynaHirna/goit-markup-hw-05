@@ -15,6 +15,7 @@
     --icon-color: #AFB1B8;
     --icon-background-color: rgba(255, 255, 255, 0.1);
     --header-border-color: 1px solid #ECECEC;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 *, 
@@ -267,6 +268,30 @@
      justify-content: space-between;
      padding-left: 0;
      padding-right: 0;
+ }
+ .work-item {
+     position: relative;
+ }
+ .overlay {
+     width: 370px;
+     height: 70px;
+     position: absolute;
+     background-image: linear-gradient(
+         to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+     );
+     bottom: 0;
+ }
+ .overlay-text {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 27px 82px;
+    margin: 0;
  }
  
  /* Секція четверта */
