@@ -47,7 +47,7 @@
            <!-- Секція перша -->
            <section class="main-section">
                <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-               <button type="button"class="primary-button">Заказать услугу</button>
+               <button type="button"class="primary-button" data-modal-open>Заказать услугу</button>
         
            </section>
 
@@ -396,18 +396,17 @@
        </footer>
 
        <!-- Модальне вікно -->
-       <div class="backdrop">
+       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
-           <button>
-             <svg>
-               <use href="" ></use>
+           <button class="close-button" data-modal-close>
+             <svg class="close-icon" width="18px" height="18px">
+               <use href="./img/sprite.svg#icon-close"></use> 
              </svg>
            </button>
          </div>
        </div>
 
-
-
+<script src="./js/modal.js"></script>
   </body>
    
 </html>

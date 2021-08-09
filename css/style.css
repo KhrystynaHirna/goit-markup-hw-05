@@ -448,6 +448,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);;
 }
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
   .modal {
     position: absolute;
     top: 50%;
@@ -459,9 +463,33 @@
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
+
+    opacity: 1;
   }
 
+  .close-button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+
+      cursor: pointer;
+      padding: 0;
      
+}
+  .close-icon {
+      border: none;
+  }
+  .modal > .close-button {
+        margin-top: 8px;
+        margin-left: 490px;
+    } 
 
 
 
