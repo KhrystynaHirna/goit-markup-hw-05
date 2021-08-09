@@ -579,6 +579,9 @@
 .portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+.portfolio-card {
+    position: relative;
+}
 .portfolio-link {
     text-decoration: none;
     display: block;
@@ -623,4 +626,15 @@ img {
    margin-top: 0;
    margin-bottom: 0;
    min-width: 322px;
+}
+.overlay-portfolio {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    background-image: linear-gradient(
+        to right,
+        rgba(33, 150, 243, 0.9),
+        rgba(33, 150, 243, 0.9)
+    );
+    bottom: 110px; 
 }
