@@ -353,6 +353,7 @@
     align-items: center;
     border-radius: 50%; 
     fill: var(--icon-color);
+    transition: fill 250ms var(--timing-function);
 }
 .team-icon-item:not(:last-child){
     margin-right: 10px;
@@ -361,6 +362,7 @@
 .team-icon-item:focus {
     background-color: var(--accent-color);
     fill: var(--body-background-color);
+    transition: fill 250ms var(--timing-function);
 }
 
 /* П'ята секція + іконки */
