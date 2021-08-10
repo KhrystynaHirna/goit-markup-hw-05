@@ -126,19 +126,23 @@
      color: var(--paragraph-text-color);
      display: flex;
      align-items: center;
+     transition: color 250ms var(--timing-function);
  }
  .info-link:hover,
  .info-link:focus {
      color: var(--accent-color);
+     transition: color 250ms var(--timing-function);
  }
  .item {
      color: var(--paragraph-text-color);
      display: flex;
      align-items: center;
+     transition: color 250ms var(--timing-function);
  }
  .item:hover,
  .item-focus {
      color: var(--accent-color);
+     transition: color 250ms var(--timing-function);
  }
  .item-icon {
   fill: currentColor;
