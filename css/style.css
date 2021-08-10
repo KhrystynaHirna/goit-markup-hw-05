@@ -386,6 +386,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: fill 250ms var(--timing-function);
 }
 .clients-logo-item .link {
     border: none;
@@ -394,6 +396,7 @@
 .clients-logo-item:focus {
    fill: var(--accent-color);
    border-color: var(--accent-color); 
+   transition: fill 250ms var(--timing-function);
 }
 
 
@@ -473,6 +476,7 @@
     border-radius: 50%; 
     fill: var(--body-background-color);
     background-color: var(--icon-background-color);
+    transition: fill 250ms var(--timing-function);
 }
 .join-icon-item:not(:last-child){
     margin-right: 10px;
@@ -480,7 +484,8 @@
 .join-icon-item:hover,
 .join-icon-item:focus {
   background-color: var(--accent-color);
-    fill: var(--body-background-color);  
+    fill: var(--body-background-color); 
+    transition: fill 250ms var(--timing-function); 
 } 
 
 
