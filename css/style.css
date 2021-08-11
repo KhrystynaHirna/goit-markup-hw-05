@@ -31,17 +31,17 @@
  }
  .container {
      width: 1200px;
-     padding-left: 15px;
-     padding-right: 15px;
+     padding: 0 15px;
      margin: 0 auto;
  }
  .list {
      list-style: none;
-     margin-top: 0;
-     margin-bottom: 0;
+     margin: 0; 
  }
  .link {
      text-decoration: none;
+     margin-top: 0;
+     margin-bottom: 0;
  }
  /* Шапка сторінки */
  
@@ -425,22 +425,21 @@
  }
  .physical-address {
      color: var(--body-background-color);
-     margin-top: 0;
+     margin-top: 0 0 9px;
      transition: color 250ms var(--timing-function);
  }
  .address .info {
      color: var(--footer-info-color);
-     margin-top: 0;
+     margin: 0 0 9px;
      transition: color 250ms var(--timing-function);
  }
  .address .link:hover,
  .address .link:focus {
      color: var(--accent-color);
  }
- .address > .link:not(:last-child) {
+ .address .link:not(:last-child) {
      margin-bottom: 9px;
  }
-
 .join {
     padding-left: 0;
 }
