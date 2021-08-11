@@ -52,15 +52,14 @@
  .page-header .main-nav {
      display: flex;
      align-items: center;
-     padding-top: 32px;
-     padding-bottom: 32px;
  }
  .logo {
      color: var(--accent-color);
      font-family: 'Raleway', 'Arial', sans-serif;
      font-size: 26px;
      line-height: 1.2;
-     letter-spacing: 0.03em;  
+     letter-spacing: 0.03em;
+     transition: color 250ms var(--timing-function);  
  }
  .logo .black-color {
      color: var(--logo-black-color);  
@@ -88,6 +87,7 @@
  .site-nav .link {
      color: var(--primary-text-color);
      display: block;
+     transition: color 250ms var(--timing-function);
  }
  .site-nav .link:hover,
  .site-nav .link:focus {
@@ -96,6 +96,7 @@
  }
  .site-nav .link.current{
      color: var(--accent-color);
+     padding: 32px 0;
  }
  .link.current {
     position: relative;
@@ -108,7 +109,7 @@
     background: var(--accent-color);
     border-radius: 2px;
     position: absolute;
-    bottom: -41px;
+    bottom: -1px;
 
  }
  .header-info {
@@ -131,18 +132,15 @@
  .info-link:hover,
  .info-link:focus {
      color: var(--accent-color);
-     transition: color 250ms var(--timing-function);
  }
  .item {
      color: var(--paragraph-text-color);
      display: flex;
      align-items: center;
-     transition: color 250ms var(--timing-function);
  }
  .item:hover,
  .item-focus {
      color: var(--accent-color);
-     transition: color 250ms var(--timing-function);
  }
  .item-icon {
   fill: currentColor;
@@ -362,7 +360,6 @@
 .team-icon-item:focus {
     background-color: var(--accent-color);
     fill: var(--body-background-color);
-    transition: fill 250ms var(--timing-function);
 }
 
 /* П'ята секція + іконки */
@@ -376,7 +373,7 @@
     align-items: center;
     padding-bottom: 94px; 
 }
-.clients-logo-item {
+.clients-logo-source {
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
@@ -389,21 +386,16 @@
 
     transition: fill 250ms var(--timing-function);
 }
-.clients-logo-item .link {
-    border: none;
-}
-.clients-logo-item:hover,
-.clients-logo-item:focus {
+.clients-logo-source:hover,
+.clients-logo-source:focus {
    fill: var(--accent-color);
    border-color: var(--accent-color); 
-   transition: fill 250ms var(--timing-function);
 }
 
 
  /* Підвал сторінки */
  .footer {
      background-color: var(--footor-background-color);
-     
      padding: 60px 0;
      margin-top: 0;
      margin-bottom: 0;
@@ -420,6 +412,7 @@
  
  .logo .link {
      margin-left: 215px;
+     transition: color 250ms var(--timing-function);
  }
  .white-color {
      color: var(--body-background-color);
@@ -440,12 +433,14 @@
  .physical-address {
      color: var(--body-background-color);
      margin-top: 0;
-     margin-bottom: 9px;
+     padding-bottom: 9px;
+     transition: fill 250ms var(--timing-function);
  }
  .address .info {
      color: var(--footer-info-color);
      margin-top: 0;
-     margin-bottom: 9px;
+     padding-bottom: 9px;
+     transition: color 250ms var(--timing-function);
  }
  .address .link:hover,
  .address .link:focus {
@@ -483,9 +478,8 @@
 }
 .join-icon-item:hover,
 .join-icon-item:focus {
-  background-color: var(--accent-color);
+    background-color: var(--accent-color);
     fill: var(--body-background-color); 
-    transition: fill 250ms var(--timing-function); 
 } 
 
 
