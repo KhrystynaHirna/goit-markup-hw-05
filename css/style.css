@@ -595,6 +595,7 @@
 .portfolio-link {
     text-decoration: none;
     display: block;
+
     transition: transform 250ms var(--timing-function),
     opasity 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
@@ -602,6 +603,7 @@
 .portfolio-link:hover,
 .portfolio-link:focus {
     box-shadow: var(--portfolio-card-shadow);
+    
 }
 .card-text {
    margin-left: 0;
@@ -643,6 +645,7 @@ img {
 .img-thumb {
     position: relative;
     overflow: hidden;
+
 }
 .overlay-portfolio {
     position: absolute;
@@ -654,7 +657,7 @@ img {
         rgba(33, 150, 243, 0.9)
     );
     opacity: 0;
-    transition: transform 250ms var(--timing-function),
+    transition: transform 250ms var(--timing-function);
 }
 .overlay-text-portfolio {
     padding: 63px 24px;
