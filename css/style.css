@@ -207,15 +207,10 @@
      padding: 94px 0 47px 0;
  }
  .advantages {
-     padding-left: 0;
-     padding-right: 0;
+     padding: 0; 
  }
  .adwantage-item {
      max-width: 270px;
-     padding-left: 0;
-     padding-right: 0;
-     margin-left: 0;
-     margin-right: 0;   
  }
  .advantage-icon-group {
      background-color: var(--team-background-color);
@@ -240,8 +235,7 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
  
-     margin-top: 0;
-     margin-bottom: 10px;
+     margin: 0 0 10px;
  }
  .specific-advantage {
      color: var(--paragraph-text-color);
@@ -335,8 +329,7 @@
 
 .team-icon-list {
     list-style: none;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
     margin-bottom: 30px;
 
     display: flex;
@@ -351,7 +344,8 @@
     align-items: center;
     border-radius: 50%; 
     fill: var(--icon-color);
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function),
+    background-coor 250ms var(--timing-function);
 }
 .team-icon-item:not(:last-child){
     margin-right: 10px;
@@ -384,7 +378,8 @@
     justify-content: center;
     align-items: center;
 
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 .clients-logo-source:hover,
 .clients-logo-source:focus {
@@ -397,8 +392,6 @@
  .footer {
      background-color: var(--footor-background-color);
      padding: 60px 0;
-     margin-top: 0;
-     margin-bottom: 0;
  }
 
  .footer-container {
@@ -433,19 +426,21 @@
  .physical-address {
      color: var(--body-background-color);
      margin-top: 0;
-     padding-bottom: 9px;
-     transition: fill 250ms var(--timing-function);
+     transition: color 250ms var(--timing-function);
  }
  .address .info {
      color: var(--footer-info-color);
      margin-top: 0;
-     padding-bottom: 9px;
      transition: color 250ms var(--timing-function);
  }
  .address .link:hover,
  .address .link:focus {
      color: var(--accent-color);
  }
+ .address > .link:not(:last-child) {
+     margin-bottom: 9px;
+ }
+
 .join {
     padding-left: 0;
 }
@@ -471,7 +466,7 @@
     border-radius: 50%; 
     fill: var(--body-background-color);
     background-color: var(--icon-background-color);
-    transition: fill 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 }
 .join-icon-item:not(:last-child){
     margin-right: 10px;
@@ -606,16 +601,8 @@
     
 }
 .card-text {
-   margin-left: 0;
-   margin-right: 0;
-   padding-left: 0;
-   padding-right: 0;
-   width: 370px;
-   box-sizing: border-box;
+   border: var(--card-border-color);
    border-top: none;
-   border-left: var(--card-border-color);
-   border-right: var(--card-border-color);
-   border-bottom: var(--card-border-color);
 }
 img {
    display: block;
