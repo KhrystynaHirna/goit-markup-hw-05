@@ -296,10 +296,10 @@
      background-color: var(--team-background-color);
      padding: 94px 0;
  }
- 
  .team {
      display: flex;
      justify-content: space-between;
+     padding-left: 0;
  }
  .team-card {
      text-align: center;
@@ -437,7 +437,7 @@
  .address .link:focus {
      color: var(--accent-color);
  }
- .address .link:not(:last-child) {
+ .address-item:not(:last-child) {
      margin-bottom: 9px;
  }
 .join {
@@ -559,9 +559,7 @@
    margin-top: 0;
    cursor: pointer;  
    
-   transition: color 250ms var(--timing-function),
-   box-shadow 250ms var(--timing-function),
-   backgraund 250ms var(--timing-function);
+   transition: all 250ms var(--timing-function);
 }
 .nav-button:not(:last-child) {
    margin-right: 8px;
